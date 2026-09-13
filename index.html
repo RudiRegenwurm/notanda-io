@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notanda — independent evidence infrastructure for scientific research</title>
+<meta name="description" content="Notanda finds openly available research, records where every item came from, and keeps that record next to your files. Models change. Evidence stays.">
+<meta property="og:title" content="Notanda — Knowledge should be within reach.">
+<meta property="og:description" content="Independent evidence infrastructure for scientific research. Models change. Evidence stays.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://notanda.io/">
+<meta property="og:image" content="https://notanda.io/assets/notanda_avatar_512.png">
+<meta name="theme-color" content="#2E2A26">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="notanda_avatar_180.png">
+<link rel="stylesheet" href="styles.css">
+<!--
+  NOTANDA LANDINGPAGE — Live-Stand V1.2, 2026-09-13
+  Inhalt: Inhaltskonzept V1.0 (unverändert). Marke: Leitbild V1.2.1, ÄV V1.1,
+  Emblem-Produktionspaket V1.0 (Originalassets, SHA-256-verifiziert gegen die
+  versiegelte SHA256SUMS im Repository docs/brand/Notanda_Emblem_Final_V1.0_2026-09-11),
+  Notanda Visual Application Guide V1 (Referenzimplementierung).
+  Keine externen Anfragen: Schriften unter /fonts (SIL OFL), kein Script, kein Tracking.
+
+  Capability-Aussagen am 2026-09-12 gegen Repository-Stand Release 1.2.0 verifiziert.
+  Repository ist noch nicht öffentlich: die "Code"-Bezüge sind bewusst deaktiviert
+  (Geisterschrift, .ph / .btn.is-disabled) statt auf eine nicht existierende Adresse zu verlinken.
+-->
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="lockup" href="#">
+      <img src="assets/notanda_lockup_dunkel_pfade.svg" alt="Notanda — independent evidence infrastructure for scientific research" width="327" height="120">
+    </a>
+    <nav class="site" aria-label="Page">
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#status">Status</a></li>
+        <li><span class="ph" title="Repository is not public yet">Code</span></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1 · Hero / Mission -->
+  <section class="hero dark">
+    <div class="wrap">
+      <h1>Knowledge should be within reach.</h1>
+      <p class="lead">Notanda finds openly available research, records where every item came from, and keeps that record next to your files — so that months later you can still show how you got there.</p>
+      <p class="claim">The tools you search with will keep changing. The record of what you found doesn't have to.
+        <strong>Models change. Evidence stays.</strong></p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:rkiechle@googlemail.com?subject=Notanda%20beta%20access">Request beta access</a>
+        <span class="btn btn-secondary is-disabled" aria-disabled="true" title="Repository is not public yet">Look at the code</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Problem -->
+  <section class="problem">
+    <div class="wrap">
+      <h2>Finding the evidence is only half the job.</h2>
+      <p>Most research tools are built to produce an answer, not a record. Which databases were asked, what they actually returned, which version of a full text you ended up with, whether anything has changed since — in most systems that context is never kept as something you can go back to. It exists during the search and not afterwards.</p>
+      <p>Months later, when you need to show how you got there, you are reconstructing it from memory and a folder of PDFs.</p>
+      <p class="verdict">Research you cannot reconstruct is hard to defend.</p>
+    </div>
+  </section>
+
+  <!-- 3 · What Notanda does today -->
+  <section class="caps" id="today">
+    <div class="wrap">
+      <h2>What Notanda does today</h2>
+      <dl>
+        <div class="cap">
+          <dt>Searches three sources with different jobs.</dt>
+          <dd>OpenAlex finds candidates and metadata. Europe PMC cross-checks records and supplies full texts. Unpaywall is asked whether an open version exists somewhere else.</dd>
+        </div>
+        <div class="cap">
+          <dt>Downloads only what is lawfully open.</dt>
+          <dd>Open access, free licences, legitimate repositories — nothing else.</dd>
+        </div>
+        <div class="cap">
+          <dt>Writes down every step.</dt>
+          <dd>Each request, each answer, each failure is appended to a ledger. Provider responses are retained separately, so conflicting source information is not lost when a preferred view is produced.</dd>
+        </div>
+        <div class="cap">
+          <dt>Fingerprints every file.</dt>
+          <dd>A SHA-256 checksum for each download, so you can tell later whether the file you have is the file you got.</dd>
+        </div>
+        <div class="cap">
+          <dt>Leaves everything on your machine.</dt>
+          <dd>Plain files in a documented structure, not a service you have to keep paying to keep your own research.</dd>
+        </div>
+      </dl>
+      <p class="motto">We show what exists, and we deliver what is open.</p>
+    </div>
+  </section>
+
+  <!-- 4 · How it works -->
+  <section class="how" id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><p><strong>You say what you are looking for.</strong> A question, a topic, a set of criteria.</p></li>
+        <li><p><strong>Notanda asks the sources and keeps the answers</strong> — including the ones that contradict each other.</p></li>
+        <li><p><strong>It retrieves what is openly available</strong> and takes a fingerprint of every file.</p></li>
+        <li><p><strong>It appends the whole run to the ledger.</strong><span class="nota-dot" role="img" aria-label="noted"></span> The search can be read back later: what was asked, what came back, what was reachable, and when.</p></li>
+      </ol>
+      <p class="coda">No step is rewritten. If a provider answers differently next year, both answers are still there.</p>
+    </div>
+  </section>
+
+  <!-- 5 · Where it stands · What it doesn't do -->
+  <section class="status dark" id="status">
+    <div class="wrap">
+      <h2>Where it stands</h2>
+      <p class="stamp">Status as of 2026-09-12, against release 1.2.0.</p>
+      <div class="split">
+        <div>
+          <h3>Available now</h3>
+          <p>The workflow described above is available in the current beta. Two things are being built: proving that the full history holds up in daily use, and exporting a corpus so it can be moved or restored elsewhere.</p>
+          <h3>Further out</h3>
+          <p>Deliberately not promised yet: watching a corpus for changes over time, taking in results produced by other research tools, and letting AI agents read from the corpus directly.</p>
+        </div>
+        <div>
+          <h3>What Notanda doesn't do</h3>
+          <dl class="limits">
+            <dt>It doesn't judge quality or truth.</dt>
+            <dd>Notanda records where something came from, not whether it is any good. That judgement stays with you.</dd>
+            <dt>It doesn't get past paywalls.</dt>
+            <dd>No institutional logins, no workarounds. Closed work is recorded as existing, not delivered.</dd>
+            <dt>It doesn't claim to be complete.</dt>
+            <dd>What the sources don't report, Notanda can't show — and a gap is recorded as a gap.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Try it -->
+  <section class="try" id="try">
+    <div class="wrap">
+      <h2>Try it</h2>
+      <p>Notanda works today and is early. Access is handed out one at a time, so that feedback actually gets answered.</p>
+      <p>Tell us briefly what you are researching and how you work now.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:rkiechle@googlemail.com?subject=Notanda%20beta%20access">Request beta access</a>
+        <span class="btn btn-secondary is-disabled" aria-disabled="true" title="Repository is not public yet">Look at the code</span>
+      </div>
+      <p class="byline">Built by Rudolf Kiechle, an independent developer in Germany. Not affiliated with any database provider, publisher or AI company. MIT licence.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand">
+      <img class="emblem" src="assets/notanda_emblem_farbig_dunkel.svg" alt="Notanda" width="700" height="944">
+      <p class="descriptor">Independent evidence infrastructure for scientific research</p>
+    </div>
+    <ul>
+      <li><a href="imprint.html">Imprint</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="mailto:rkiechle@googlemail.com">Contact</a></li>
+      <li><span class="ph" title="Repository is not public yet">Repository</span></li>
+      <li>Last updated 2026-09-13</li>
+    </ul>
+    <p>This site sets no cookies and uses no tracking.</p>
+  </div>
+</footer>
+</body>
+</html>

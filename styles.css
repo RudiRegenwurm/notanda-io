@@ -1,0 +1,228 @@
+/* Notanda — styles.css
+   Marken-Tokens aus Markenfundament V1 + Änderungsvorschlag V1.1 (Nebentextfarben);
+   Anwendungsregeln aus dem Notanda Visual Application Guide V1 (12.09.2026).
+   Kontraste nach WCAG AA geprüft. Schriften selbst gehostet (SIL OFL), keine externen Anfragen. */
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/source-serif-4-latin-wght-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/source-serif-4-latin-wght-italic.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+}
+
+:root {
+  /* Markenfarben (Markenfundament V1 / ÄV V1.1 §6) */
+  --brown:      #2E2A26;   /* Tiefbraun */
+  --terracotta: #B5573A;   /* dem Nota-Punkt vorbehalten; kein Text unter 18 px */
+  --olive:      #6B7A3C;   /* Sekundär, Ordnung, Fokus */
+  --sand:       #E8DCC8;   /* hebende Flächen; Text auf Dunkel */
+  --grey:       #8C8378;   /* Linien- und Flächenfarbe, kein kleiner Text */
+  --muted:      #6E655A;   /* Warmgrau dunkel — Nebentext klein auf hell (ÄV §6) */
+  --muted-dark: #CFC5B5;   /* Warmgrau hell — Nebentext klein auf dunkel (ÄV §6) */
+
+  /* Anwendungston (Guide §3): warmer Lesegrund, aus dem Spezifikationsblatt */
+  --papier:     #FBF7EF;
+
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:  "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono:  "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* Formenlogik (Guide §7): kleine feste Radien, keine Pillen */
+  --r-s: 4px;
+  --r-m: 8px;
+
+  --measure: 36rem;
+  --measure-wide: 52rem;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+section[id] { scroll-margin-top: 1.5rem; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--brown);
+  background: var(--papier);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2.5px; }
+:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
+
+.skip { position: absolute; left: -999px; top: 0; background: var(--sand); color: var(--brown); padding: .5rem 1rem; border-radius: var(--r-s); }
+.skip:focus { left: 1rem; top: 1rem; z-index: 10; }
+
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 var(--gutter); }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: clamp(2rem, 4.2vw, 3rem); max-width: 22ch; margin-bottom: 1.75rem; }
+p { margin: 0 0 1.25rem; max-width: var(--measure); }
+strong { font-weight: 500; }
+
+/* Dunkle Ankerzonen (Guide §3/§10): Tiefbraun trägt, Sand spricht */
+.dark { background: var(--brown); color: var(--sand); }
+
+/* Nota-Punkt (ADR-Design-01 / Guide §6): bemerkt, ausgewählt, festgehalten —
+   genau ein Einsatz pro Seite, nie als Wahrheits- oder Statuszeichen */
+.nota-dot {
+  display: inline-block; width: .42em; height: .42em; border-radius: 50%;
+  background: var(--terracotta); margin-left: .3em; vertical-align: .32em;
+}
+
+/* Platzhalter bleiben sichtbar, bis sie gesetzt sind (mono + gestrichelt, kein Terrakotta-Text) */
+.ph {
+  font-family: var(--mono);
+  font-size: .92em;
+  color: var(--muted);
+  border-bottom: 1px dashed var(--grey);
+  white-space: nowrap;
+}
+.dark .ph { color: var(--muted-dark); border-color: var(--muted-dark); }
+
+/* Deaktivierte Aktionen (z. B. Code-Links vor Veröffentlichung des Repositorys):
+   gleiche visuelle Sprache wie .ph — Geisterschrift statt aktivem Button */
+.btn.is-disabled {
+  opacity: .45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.dark .btn.is-disabled { opacity: .5; }
+
+/* ---------- Kopfbereich (dunkle Ankerzone, Lockup mit Originalassets) ---------- */
+header.site { background: var(--brown); color: var(--sand); padding: 1.75rem 0; }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.lockup { display: inline-block; }
+.lockup img { display: block; height: clamp(60px, 7vw, 76px); width: auto; }
+nav.site ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.75rem; }
+nav.site a { text-decoration: none; font-size: .95rem; }
+nav.site a:hover { text-decoration: underline; }
+nav.site .ph { font-size: .95rem; }
+
+/* ---------- Blöcke ---------- */
+section { padding: clamp(4.5rem, 10vw, 8rem) 0; }
+section + section { border-top: 1px solid var(--grey); }
+.dark + section, section.dark { border-top: 0; }
+
+/* Hero (dunkle Ankerzone; Sinn-Satz zuerst, Infrastruktur-Claim danach — Leitbild §6) */
+.hero { padding-top: clamp(3.5rem, 9vw, 7rem); padding-bottom: clamp(4rem, 9vw, 7rem); }
+.hero h1 { font-size: clamp(2.9rem, 8.2vw, 6.4rem); line-height: 1.05; max-width: 12ch; margin-bottom: 2.25rem; }
+.hero .lead { font-family: var(--serif); font-weight: 400; font-size: clamp(1.25rem, 2.1vw, 1.5rem); line-height: 1.45; max-width: 30em; }
+.hero .claim { margin-top: 2rem; max-width: 30em; }
+.hero .claim strong { font-family: var(--serif); font-size: clamp(1.35rem, 2.3vw, 1.7rem); font-weight: 600; display: block; margin-top: .35rem; }
+
+/* Buttons (Guide §9): gerundete Rechtecke, kein Terrakotta, keine Pillen */
+.actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
+.btn { display: inline-block; text-decoration: none; font-weight: 500; font-size: 1rem; padding: .85rem 1.4rem; border-radius: var(--r-m); border: 1.5px solid transparent; line-height: 1.2; }
+.btn-primary { background: var(--brown); color: var(--papier); border-color: var(--brown); }
+.btn-primary:hover { background: #423C35; border-color: #423C35; }
+.btn-secondary { border-color: var(--brown); color: var(--brown); background: transparent; }
+.btn-secondary:hover { background: var(--sand); }
+.dark .btn-primary { background: var(--sand); color: var(--brown); border-color: var(--sand); }
+.dark .btn-primary:hover { background: #F1E8D8; border-color: #F1E8D8; }
+.dark .btn-secondary { border-color: var(--sand); color: var(--sand); }
+.dark .btn-secondary:hover { background: rgba(232,220,200,.12); }
+
+/* Problem */
+.problem .verdict { font-family: var(--serif); font-size: clamp(1.5rem, 2.8vw, 2.1rem); font-weight: 600; line-height: 1.25; max-width: 24ch; margin-top: 2.5rem; padding-left: 1.25rem; border-left: 3px solid var(--brown); }
+
+/* Capabilities (Sand hebt; abgestufte Trenner: tragend 3px, ordnend 1px — Guide §7) */
+.caps { background: var(--sand); }
+.caps dl { margin: 0; max-width: var(--measure-wide); }
+.caps .cap { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 1rem 2.5rem; padding: 1.6rem 0; border-top: 1px solid var(--grey); }
+.caps .cap:first-of-type { border-top: 3px solid var(--grey); }
+.caps .cap:last-of-type { border-bottom: 3px solid var(--grey); }
+.caps dt { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; line-height: 1.25; }
+.caps dd { margin: 0; max-width: 34em; }
+.caps .motto { font-family: var(--serif); font-style: italic; font-size: 1.35rem; margin-top: 2.5rem; }
+
+/* How it works — echte Sequenz am kräftigen Stamm (Guide §7: hinab zur Quelle) */
+.steps { list-style: none; margin: 0; padding: 0; max-width: var(--measure-wide); counter-reset: step; }
+.steps li { counter-increment: step; position: relative; padding: 0 0 2.25rem 4.25rem; max-width: 40em; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: -.15rem; font-family: var(--serif); font-size: 2.1rem; font-weight: 600; color: var(--olive); line-height: 1; }
+.steps li::after { content: ""; position: absolute; left: .6rem; top: 2.5rem; bottom: .6rem; width: 3px; background: var(--grey); }
+.steps li:last-child::after { display: none; }
+.steps strong { font-size: 1.15rem; }
+.steps p { margin: 0; font-size: 1.15rem; line-height: 1.5; }
+.how .coda { margin-top: 1rem; font-family: var(--serif); font-size: 1.3rem; max-width: 30em; }
+
+/* Where it stands (Maschinenraum: Mono-Stempel, ruhige Nebentexte) */
+.status h2 { color: var(--sand); }
+.status .stamp { font-family: var(--mono); font-size: .95rem; color: var(--muted-dark); margin-bottom: 2rem; }
+.status .split { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 64rem; }
+.status h3 { font-size: 1.15rem; font-family: var(--sans); font-weight: 500; color: var(--muted-dark); margin: 0 0 .5rem; }
+.limits { margin: 0; }
+.limits dt { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; margin-top: 1.5rem; }
+.limits dt:first-child { margin-top: 0; }
+.limits dd { margin: .35rem 0 0; max-width: 30em; color: var(--muted-dark); }
+
+/* Try it */
+.try { background: var(--sand); }
+.try .byline { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--grey); color: var(--muted); font-size: 1rem; max-width: 40em; }
+
+/* Footer (dunkle Ankerzone mit solitärem Emblem — Guide §12) */
+footer.site { background: var(--brown); color: var(--sand); padding: 3rem 0 3rem; font-size: .9rem; }
+footer.site .foot-brand { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.75rem; }
+footer.site .foot-brand .emblem { height: 52px; width: auto; }
+footer.site .foot-brand .descriptor { margin: .2rem 0 0; color: var(--muted-dark); font-size: .9rem; max-width: 26ch; }
+footer.site ul { list-style: none; margin: 0 0 .75rem; padding: 1.25rem 0 0; display: flex; gap: 1.5rem; flex-wrap: wrap; border-top: 1px solid var(--muted); }
+footer.site a { text-decoration: none; }
+footer.site a:hover { text-decoration: underline; }
+footer.site p { margin: 0; font-size: .9rem; color: var(--muted-dark); }
+
+/* Unterseiten (Imprint, Privacy) */
+.page { padding: clamp(3rem, 7vw, 5rem) 0 clamp(4rem, 8vw, 6rem); }
+.page h1 { font-size: clamp(2rem, 4.2vw, 3rem); margin-bottom: 2rem; }
+.page h2 { font-size: 1.5rem; margin: 2.5rem 0 .75rem; }
+.page p, .page ul { max-width: var(--measure); }
+.page ul { padding-left: 1.2rem; }
+.page .back { display: inline-block; margin-top: 3rem; }
+
+@media (max-width: 720px) {
+  .caps .cap { grid-template-columns: 1fr; gap: .5rem; }
+  .status .split { grid-template-columns: 1fr; gap: 3rem; }
+  header.site .wrap { gap: 1rem; }
+  .steps li { padding-left: 3.25rem; }
+  .steps li::after { left: .5rem; }
+}
