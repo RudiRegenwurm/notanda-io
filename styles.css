@@ -208,7 +208,11 @@ footer.site .foot-brand .emblem { height: 52px; width: auto; }
 footer.site .foot-brand .descriptor { margin: .2rem 0 0; color: var(--muted-dark); font-size: .9rem; max-width: 26ch; }
 footer.site ul { list-style: none; margin: 0 0 .75rem; padding: 1.25rem 0 0; display: flex; gap: 1.5rem; flex-wrap: wrap; border-top: 1px solid var(--muted); }
 footer.site ul.social { margin: 0 0 1.5rem; padding-top: 0; border-top: none; gap: 1.25rem; font-size: .85rem; }
-footer.site ul.social a { color: var(--muted-dark); }
+footer.site ul.social a { color: var(--muted-dark); display: inline-flex; align-items: center; gap: .45rem; }
+footer.site ul.social a:hover { text-decoration: none; }
+footer.site ul.social a:hover span { text-decoration: underline; }
+footer.site ul.social .ico { width: 16px; height: 16px; flex: none; fill: currentColor; opacity: .82; }
+footer.site ul.social a:hover .ico, footer.site ul.social a:focus-visible .ico { opacity: 1; }
 footer.site a { text-decoration: none; }
 footer.site a:hover { text-decoration: underline; }
 footer.site p { margin: 0; font-size: .9rem; color: var(--muted-dark); }
@@ -225,6 +229,7 @@ footer.site p { margin: 0; font-size: .9rem; color: var(--muted-dark); }
   .caps .cap { grid-template-columns: 1fr; gap: .5rem; }
   .status .split { grid-template-columns: 1fr; gap: 3rem; }
   header.site .wrap { gap: 1rem; }
+  footer.site ul.social { gap: .75rem 1rem; }
   .steps li { padding-left: 3.25rem; }
   .steps li::after { left: .5rem; }
 }
