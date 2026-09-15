@@ -155,6 +155,7 @@ section + section { border-top: 1px solid var(--grey); }
 /* Buttons (Guide §9): gerundete Rechtecke, kein Terrakotta, keine Pillen */
 .actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
 .btn { display: inline-block; text-decoration: none; font-weight: 500; font-size: 1rem; padding: .85rem 1.4rem; border-radius: var(--r-m); border: 1.5px solid transparent; line-height: 1.2; }
+.actions + p { margin-top: 1.5rem; }
 .btn-primary { background: var(--brown); color: var(--papier); border-color: var(--brown); }
 .btn-primary:hover { background: #423C35; border-color: #423C35; }
 .btn-secondary { border-color: var(--brown); color: var(--brown); background: transparent; }
