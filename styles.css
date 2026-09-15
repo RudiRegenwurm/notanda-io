@@ -206,7 +206,7 @@ footer.site { background: var(--brown); color: var(--sand); padding: 3rem 0 3rem
 footer.site .foot-brand { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.75rem; }
 footer.site .foot-brand .emblem { height: 52px; width: auto; }
 footer.site .foot-brand .descriptor { margin: .2rem 0 0; color: var(--muted-dark); font-size: .9rem; max-width: 26ch; }
-footer.site ul { list-style: none; margin: 0 0 .75rem; padding: 1.25rem 0 0; display: flex; gap: 1.5rem; flex-wrap: wrap; border-top: 1px solid var(--muted); }
+footer.site ul { list-style: none; margin: 0 0 1.25rem; padding: 1.25rem 0 0; display: flex; gap: 1.5rem; flex-wrap: wrap; border-top: 1px solid var(--muted); }
 footer.site ul.social { margin: 0 0 1.5rem; padding-top: 0; border-top: none; gap: 1.25rem; font-size: .85rem; }
 footer.site ul.social a { color: var(--muted-dark); display: inline-flex; align-items: center; gap: .45rem; }
 footer.site ul.social a:hover { text-decoration: none; }
