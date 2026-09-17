@@ -200,7 +200,15 @@ section + section { border-top: 1px solid var(--grey); }
 
 /* Try it */
 .try { background: var(--sand); }
-.try .byline { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--grey); color: var(--muted); font-size: 1rem; max-width: 40em; }
+.try .ask { margin: 0 0 1.75rem; padding-left: 1.15rem; max-width: var(--measure); }
+.try .ask li { margin-bottom: .3rem; }
+/* Nebentext auf Sand: Warmgrau dunkel erreicht auf #E8DCC8 nur 4,22:1 und damit nicht
+   WCAG AA für kleinen Text (auf Papier sind es 5,35:1). Auf dieser Fläche trägt
+   Tiefbraun den Nebentext; die Zurücknahme übernehmen Schriftgrad und Abstand. */
+.try .fallback { color: var(--brown); font-size: 1rem; max-width: 40em; }
+.try .byline { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--grey); color: var(--brown); font-size: 1rem; max-width: 40em; }
+/* Adressen zum Abschreiben: Mono für Lesbarkeit, ein Klick wählt die ganze Adresse */
+.mail { font-family: var(--mono); font-size: .95em; white-space: nowrap; -webkit-user-select: all; user-select: all; }
 
 /* Footer (dunkle Ankerzone mit solitärem Emblem — Guide §12) */
 footer.site { background: var(--brown); color: var(--sand); padding: 3rem 0 3rem; font-size: .9rem; }
