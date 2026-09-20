@@ -121,6 +121,12 @@ strong { font-weight: 500; }
 }
 .dark .ph { color: var(--muted-dark); border-color: var(--muted-dark); }
 
+/* Kleiner Metahinweis neben einem Link (z. B. "MIT" neben Code-/Repository-Links):
+   gleiche Mono/Nebentext-Sprache wie .ph, aber ohne Platzhalter-Unterstrich —
+   das Ziel existiert bereits, es wird nur ergaenzt. Bisher nur in Kopf- und
+   Fusszeile eingesetzt, beides dunkle Ankerzonen — daher Warmgrau hell. */
+.tag { font-family: var(--mono); font-size: .78em; color: var(--muted-dark); margin-left: .35em; }
+
 /* Deaktivierte Aktionen (z. B. Code-Links vor Veröffentlichung des Repositorys):
    gleiche visuelle Sprache wie .ph — Geisterschrift statt aktivem Button */
 .btn.is-disabled {
@@ -207,6 +213,7 @@ section + section { border-top: 1px solid var(--grey); }
    Tiefbraun den Nebentext; die Zurücknahme übernehmen Schriftgrad und Abstand. */
 .try .fallback { color: var(--brown); font-size: 1rem; max-width: 40em; }
 .try .byline { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--grey); color: var(--brown); font-size: 1rem; max-width: 40em; }
+.try .byline + .byline { margin-top: 1rem; padding-top: 0; border-top: none; }
 /* Adressen zum Abschreiben: Mono für Lesbarkeit, ein Klick wählt die ganze Adresse */
 .mail { font-family: var(--mono); font-size: .95em; white-space: nowrap; -webkit-user-select: all; user-select: all; }
 

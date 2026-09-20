@@ -16,184 +16,190 @@
 <link rel="apple-touch-icon" href="/notanda_avatar_180.png">
 <link rel="stylesheet" href="styles.css">
 <!--
-  NOTANDA LANDINGPAGE — Live-Stand V1.2, 2026-09-13
-  Inhalt: Inhaltskonzept V1.0 (unverändert). Marke: Leitbild V1.2.1, ÄV V1.1,
-  Emblem-Produktionspaket V1.0 (Originalassets, SHA-256-verifiziert gegen die
-  versiegelte SHA256SUMS im Repository docs/brand/Notanda_Emblem_Final_V1.0_2026-09-11),
-  Notanda Visual Application Guide V1 (Referenzimplementierung).
-  Keine externen Anfragen: Schriften unter /fonts (SIL OFL), kein ausgefuehrtes Script (ein JSON-LD-Datenblock), kein Tracking.
+NOTANDA LANDINGPAGE — Live-Stand V1.2, 2026-09-13
+Inhalt: Inhaltskonzept V1.0 (unverändert). Marke: Leitbild V1.2.1, ÄV V1.1,
+Emblem-Produktionspaket V1.0 (Originalassets, SHA-256-verifiziert gegen die
+versiegelte SHA256SUMS im Repository docs/brand/Notanda_Emblem_Final_V1.0_2026-09-11),
+Notanda Visual Application Guide V1 (Referenzimplementierung).
+Keine externen Anfragen: Schriften unter /fonts (SIL OFL), kein ausgefuehrtes Script (ein JSON-LD-Datenblock), kein Tracking.
 
-  Capability-Aussagen am 2026-09-12 gegen Repository-Stand Release 1.2.0 verifiziert;
-  Versionsstand am 2026-09-19 auf Release 1.3.0 aktualisiert (README des Repositorys als Quelle geprueft).
-  Repository ist jetzt oeffentlich (https://github.com/RudiRegenwurm/Open-Access-API-Harvester): Navigation und Footer verlinken direkt dorthin.
-  Weiterhin klargestellt: der Produktkern ist unter MIT oeffentlich zugaenglich, es gibt aber
-  weiterhin keinen oeffentlichen Beta-Download, kein veroeffentlichtes Release und keinen
-  allgemeinen Rollout. Beta-Zugang laeuft unveraendert ausschliesslich ueber beta@notanda.io.
+Capability-Aussagen am 2026-09-12 gegen Repository-Stand Release 1.2.0 verifiziert;
+Versionsstand am 2026-09-19 auf Release 1.3.0 aktualisiert (README des Repositorys als Quelle geprueft).
+Repository ist jetzt oeffentlich (https://github.com/RudiRegenwurm/Open-Access-API-Harvester): Navigation und Footer verlinken direkt dorthin.
+Weiterhin klargestellt: der Produktkern ist unter MIT oeffentlich zugaenglich, es gibt aber
+weiterhin keinen oeffentlichen Beta-Download, kein veroeffentlichtes Release und keinen
+allgemeinen Rollout. Beta-Zugang laeuft unveraendert ausschliesslich ueber beta@notanda.io.
+
+Nachtrag 2026-09-20: MIT-Hinweis sichtbarer gemacht (Rudolf Kiechles ausdruecklicher Auftrag,
+Begruendung Reputation). Zwei Aenderungen, keine neue Aussage: (1) der bestehende MIT-Satz in der
+Byline steht jetzt als eigener Absatz statt mitten im Fliesstext; (2) ein leiser "MIT"-Hinweis
+neben den bestehenden Code-/Repository-Links in Kopf- und Fusszeile (.tag in styles.css).
 -->
-  <script type="application/ld+json">
-    {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://notanda.io/#organization","name":"Notanda Research","alternateName":"Notanda","url":"https://notanda.io/","logo":"https://notanda.io/assets/notanda_avatar_512.png","description":"Independent evidence infrastructure for scientific research.","address":{"@type":"PostalAddress","addressCountry":"DE"},"sameAs":["https://x.com/notandaresearch","https://instagram.com/notandaresearch","https://threads.com/@notandaresearch","https://www.facebook.com/notandaresearch","https://t.me/notandaresearch","https://reddit.com/user/notanda","https://mastodon.social/@notanda","https://medium.com/@notanda"]},{"@type":"WebSite","@id":"https://notanda.io/#website","url":"https://notanda.io/","name":"Notanda Research","inLanguage":"en","publisher":{"@id":"https://notanda.io/#organization"}}]}
-  </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://notanda.io/#organization","name":"Notanda Research","alternateName":"Notanda","url":"https://notanda.io/","logo":"https://notanda.io/assets/notanda_avatar_512.png","description":"Independent evidence infrastructure for scientific research.","address":{"@type":"PostalAddress","addressCountry":"DE"},"sameAs":["https://x.com/notandaresearch","https://instagram.com/notandaresearch","https://threads.com/@notandaresearch","https://www.facebook.com/notandaresearch","https://t.me/notandaresearch","https://reddit.com/user/notanda","https://mastodon.social/@notanda","https://medium.com/@notanda"]},{"@type":"WebSite","@id":"https://notanda.io/#website","url":"https://notanda.io/","name":"Notanda Research","inLanguage":"en","publisher":{"@id":"https://notanda.io/#organization"}}]}
+</script>
 </head>
 
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site">
-  <div class="wrap">
-    <a class="lockup" href="#">
-      <img src="assets/notanda_lockup_dunkel_pfade.svg" alt="Notanda Research — independent evidence infrastructure for scientific research" width="327" height="120">
-    </a>
-    <nav class="site" aria-label="Page">
-      <ul>
-        <li><a href="#how">How it works</a></li>
-        <li><a href="#status">Status</a></li>
-        <li><a href="https://github.com/RudiRegenwurm/Open-Access-API-Harvester">Code</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="wrap">
+<a class="lockup" href="#">
+<img src="assets/notanda_lockup_dunkel_pfade.svg" alt="Notanda Research — independent evidence infrastructure for scientific research" width="327" height="120">
+</a>
+<nav class="site" aria-label="Page">
+<ul>
+<li><a href="#how">How it works</a></li>
+<li><a href="#status">Status</a></li>
+<li><a href="https://github.com/RudiRegenwurm/Open-Access-API-Harvester">Code</a> <span class="tag">MIT</span></li>
+</ul>
+</nav>
+</div>
 </header>
 
 <main id="main">
 
-  <!-- 1 · Hero / Mission -->
-  <section class="hero dark">
-    <div class="wrap">
-      <h1>Knowledge should be within reach.</h1>
-      <p class="lead">Notanda Research finds openly available research, records where every item came from, and keeps that record next to your files — so that months later you can still show how you got there.</p>
-      <p class="claim">The tools you search with will keep changing. The record of what you found doesn't have to.
-        <strong>Models change. Evidence stays.</strong></p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#try">Request beta access</a>
-      </div>
-    </div>
-  </section>
+<!-- 1 · Hero / Mission -->
+<section class="hero dark">
+<div class="wrap">
+<h1>Knowledge should be within reach.</h1>
+<p class="lead">Notanda Research finds openly available research, records where every item came from, and keeps that record next to your files — so that months later you can still show how you got there.</p>
+<p class="claim">The tools you search with will keep changing. The record of what you found doesn't have to.
+<strong>Models change. Evidence stays.</strong></p>
+<div class="actions">
+<a class="btn btn-primary" href="#try">Request beta access</a>
+</div>
+</div>
+</section>
 
-  <!-- 2 · Problem -->
-  <section class="problem">
-    <div class="wrap">
-      <h2>Finding the evidence is only half the job.</h2>
-      <p>Most research tools are built to produce an answer, not a record. Which databases were asked, what they actually returned, which version of a full text you ended up with, whether anything has changed since — in most systems that context is never kept as something you can go back to. It exists during the search and not afterwards.</p>
-      <p>Months later, when you need to show how you got there, you are reconstructing it from memory and a folder of PDFs.</p>
-      <p class="verdict">Research you cannot reconstruct is hard to defend.</p>
-    </div>
-  </section>
+<!-- 2 · Problem -->
+<section class="problem">
+<div class="wrap">
+<h2>Finding the evidence is only half the job.</h2>
+<p>Most research tools are built to produce an answer, not a record. Which databases were asked, what they actually returned, which version of a full text you ended up with, whether anything has changed since — in most systems that context is never kept as something you can go back to. It exists during the search and not afterwards.</p>
+<p>Months later, when you need to show how you got there, you are reconstructing it from memory and a folder of PDFs.</p>
+<p class="verdict">Research you cannot reconstruct is hard to defend.</p>
+</div>
+</section>
 
-  <!-- 3 · What Notanda does today -->
-  <section class="caps" id="today">
-    <div class="wrap">
-      <h2>What Notanda does today</h2>
-      <dl>
-        <div class="cap">
-          <dt>Searches three sources with different jobs.</dt>
-          <dd>OpenAlex finds candidates and metadata. Europe PMC cross-checks records and supplies full texts. Unpaywall is asked whether an open version exists somewhere else.</dd>
-        </div>
-        <div class="cap">
-          <dt>Downloads only what is lawfully open.</dt>
-          <dd>Open access, free licences, legitimate repositories — nothing else.</dd>
-        </div>
-        <div class="cap">
-          <dt>Writes down every step.</dt>
-          <dd>Each request, each answer, each failure is appended to a ledger. Provider responses are retained separately, so conflicting source information is not lost when a preferred view is produced.</dd>
-        </div>
-        <div class="cap">
-          <dt>Fingerprints every file.</dt>
-          <dd>A SHA-256 checksum for each download, so you can tell later whether the file you have is the file you got.</dd>
-        </div>
-        <div class="cap">
-          <dt>Leaves everything on your machine.</dt>
-          <dd>Plain files in a documented structure, not a service you have to keep paying to keep your own research.</dd>
-        </div>
-      </dl>
-      <p class="motto">We show what exists, and we deliver what is open.</p>
-    </div>
-  </section>
+<!-- 3 · What Notanda does today -->
+<section class="caps" id="today">
+<div class="wrap">
+<h2>What Notanda does today</h2>
+<dl>
+<div class="cap">
+<dt>Searches three sources with different jobs.</dt>
+<dd>OpenAlex finds candidates and metadata. Europe PMC cross-checks records and supplies full texts. Unpaywall is asked whether an open version exists somewhere else.</dd>
+</div>
+<div class="cap">
+<dt>Downloads only what is lawfully open.</dt>
+<dd>Open access, free licences, legitimate repositories — nothing else.</dd>
+</div>
+<div class="cap">
+<dt>Writes down every step.</dt>
+<dd>Each request, each answer, each failure is appended to a ledger. Provider responses are retained separately, so conflicting source information is not lost when a preferred view is produced.</dd>
+</div>
+<div class="cap">
+<dt>Fingerprints every file.</dt>
+<dd>A SHA-256 checksum for each download, so you can tell later whether the file you have is the file you got.</dd>
+</div>
+<div class="cap">
+<dt>Leaves everything on your machine.</dt>
+<dd>Plain files in a documented structure, not a service you have to keep paying to keep your own research.</dd>
+</div>
+</dl>
+<p class="motto">We show what exists, and we deliver what is open.</p>
+</div>
+</section>
 
-  <!-- 4 · How it works -->
-  <section class="how" id="how">
-    <div class="wrap">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><p><strong>You say what you are looking for.</strong> A question, a topic, a set of criteria.</p></li>
-        <li><p><strong>Notanda asks the sources and keeps the answers</strong> — including the ones that contradict each other.</p></li>
-        <li><p><strong>It retrieves what is openly available</strong> and takes a fingerprint of every file.</p></li>
-        <li><p><strong>It appends the whole run to the ledger.</strong><span class="nota-dot" role="img" aria-label="noted"></span> The search can be read back later: what was asked, what came back, what was reachable, and when.</p></li>
-      </ol>
-      <p class="coda">No step is rewritten. If a provider answers differently next year, both answers are still there.</p>
-    </div>
-  </section>
+<!-- 4 · How it works -->
+<section class="how" id="how">
+<div class="wrap">
+<h2>How it works</h2>
+<ol class="steps">
+<li><p><strong>You say what you are looking for.</strong> A question, a topic, a set of criteria.</p></li>
+<li><p><strong>Notanda asks the sources and keeps the answers</strong> — including the ones that contradict each other.</p></li>
+<li><p><strong>It retrieves what is openly available</strong> and takes a fingerprint of every file.</p></li>
+<li><p><strong>It appends the whole run to the ledger.</strong><span class="nota-dot" role="img" aria-label="noted"></span> The search can be read back later: what was asked, what came back, what was reachable, and when.</p></li>
+</ol>
+<p class="coda">No step is rewritten. If a provider answers differently next year, both answers are still there.</p>
+</div>
+</section>
 
-  <!-- 5 · Where it stands · What it doesn't do -->
-  <section class="status dark" id="status">
-    <div class="wrap">
-      <h2>Where it stands</h2>
-      <p class="stamp">Status as of 2026-09-19, against release 1.3.0.</p>
-      <div class="split">
-        <div>
-          <h3>Available now</h3>
-          <p>The workflow described above is available in the current beta. Two things are being built: proving that the full history holds up in daily use, and exporting a corpus so it can be moved or restored elsewhere.</p>
-          <h3>Further out</h3>
-          <p>Deliberately not promised yet: watching a corpus for changes over time, taking in results produced by other research tools, and letting AI agents read from the corpus directly.</p>
-        </div>
-        <div>
-          <h3>What Notanda doesn't do</h3>
-          <dl class="limits">
-            <dt>It doesn't judge quality or truth.</dt>
-            <dd>Notanda records where something came from, not whether it is any good. That judgement stays with you.</dd>
-            <dt>It doesn't get past paywalls.</dt>
-            <dd>No institutional logins, no workarounds. Closed work is recorded as existing, not delivered.</dd>
-            <dt>It doesn't claim to be complete.</dt>
-            <dd>What the sources don't report, Notanda can't show — and a gap is recorded as a gap.</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- 5 · Where it stands · What it doesn't do -->
+<section class="status dark" id="status">
+<div class="wrap">
+<h2>Where it stands</h2>
+<p class="stamp">Status as of 2026-09-19, against release 1.3.0.</p>
+<div class="split">
+<div>
+<h3>Available now</h3>
+<p>The workflow described above is available in the current beta. Two things are being built: proving that the full history holds up in daily use, and exporting a corpus so it can be moved or restored elsewhere.</p>
+<h3>Further out</h3>
+<p>Deliberately not promised yet: watching a corpus for changes over time, taking in results produced by other research tools, and letting AI agents read from the corpus directly.</p>
+</div>
+<div>
+<h3>What Notanda doesn't do</h3>
+<dl class="limits">
+<dt>It doesn't judge quality or truth.</dt>
+<dd>Notanda records where something came from, not whether it is any good. That judgement stays with you.</dd>
+<dt>It doesn't get past paywalls.</dt>
+<dd>No institutional logins, no workarounds. Closed work is recorded as existing, not delivered.</dd>
+<dt>It doesn't claim to be complete.</dt>
+<dd>What the sources don't report, Notanda can't show — and a gap is recorded as a gap.</dd>
+</dl>
+</div>
+</div>
+</div>
+</section>
 
-  <!-- 6 · Try it -->
-  <section class="try" id="try">
-    <div class="wrap">
-      <h2>Try it</h2>
-      <p>Notanda works today and is early. Access is handed out one at a time, so that feedback actually gets answered.</p>
-      <p>Tell us two things:</p>
-      <ul class="ask">
-        <li>what you are researching</li>
-        <li>how you work now</li>
-      </ul>
-      <div class="actions">
-        <a class="btn btn-primary" href="mailto:beta@notanda.io?subject=Notanda%20beta%20access&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20beta%20access%20to%20Notanda.%0D%0A%0D%0AWhat%20I%20am%20researching%3A%0D%0A%0D%0AHow%20I%20work%20now%3A%0D%0A">Request beta access</a>
-      </div>
-      <p class="fallback">The button opens the mail program this computer is set up with, and fills in the two questions. If that is not how you read mail, write to <span class="mail">beta@notanda.io</span> from wherever you do. A plain message is enough.</p>
-      <p class="byline">Built by Rudolf Kiechle, an independent developer in Germany. Not affiliated with any database provider, publisher or AI company. The product core is publicly available under the MIT licence in the source repository. There is no public beta download, no published release and no general rollout yet.</p>
-    </div>
-  </section>
+<!-- 6 · Try it -->
+<section class="try" id="try">
+<div class="wrap">
+<h2>Try it</h2>
+<p>Notanda works today and is early. Access is handed out one at a time, so that feedback actually gets answered.</p>
+<p>Tell us two things:</p>
+<ul class="ask">
+<li>what you are researching</li>
+<li>how you work now</li>
+</ul>
+<div class="actions">
+<a class="btn btn-primary" href="mailto:beta@notanda.io?subject=Notanda%20beta%20access&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20beta%20access%20to%20Notanda.%0D%0A%0D%0AWhat%20I%20am%20researching%3A%0D%0A%0D%0AHow%20I%20work%20now%3A%0D%0A">Request beta access</a>
+</div>
+<p class="fallback">The button opens the mail program this computer is set up with, and fills in the two questions. If that is not how you read mail, write to <span class="mail">beta@notanda.io</span> from wherever you do. A plain message is enough.</p>
+<p class="byline">Built by Rudolf Kiechle, an independent developer in Germany. Not affiliated with any database provider, publisher or AI company.</p>
+<p class="byline">The product core is publicly available under the MIT licence in the source repository. There is no public beta download, no published release and no general rollout yet.</p>
+</div>
+</section>
 
 </main>
 
 <footer class="site">
-  <div class="wrap">
-    <div class="foot-brand">
-      <img class="emblem" src="assets/notanda_emblem_farbig_dunkel.svg" alt="Notanda Research" width="700" height="944">
-      <p class="descriptor">Independent evidence infrastructure for scientific research</p>
-    </div>
-    <ul>
-      <li><a href="imprint.html">Imprint</a></li>
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="mailto:beta@notanda.io">Contact</a></li>
-      <li><a href="https://github.com/RudiRegenwurm/Open-Access-API-Harvester">Repository</a></li>
-    </ul>
-    <!-- Icon-Pfade: simple-icons (CC0-1.0); Marken gehoeren den jeweiligen Anbietern. -->
-    <ul class="social">
-      <li><a href="https://x.com/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg><span>X</span></a></li>
-      <li><a href="https://instagram.com/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span>Instagram</span></a></li>
-      <li><a href="https://threads.com/@notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.263 11.097c-.03-3.486-1.92-5.586-5.111-5.586-2.13 0-3.922.963-4.863 2.499l2.062 1.438c.535-.843 1.272-1.543 2.628-1.543 1.528 0 2.318.85 2.544 2.431a15 15 0 0 0-2.236-.173c-4.125 0-6.068 1.867-6.068 4.336s1.943 3.99 4.804 3.99c3.139 0 5.013-2.115 5.781-4.735.798.361 1.348 1.204 1.348 2.47 0 3.387-3.907 5.232-7.22 5.232-4.885 0-8.077-3.207-8.077-8.424 0-6.392 4.223-10.487 9.9-10.487 3.808 0 5.69 1.671 6.97 3.914l2.108-1.475C21.44 2.078 18.331 0 13.663 0 6.227 0 1.168 5.277 1.168 12.934c0 7 4.953 11.066 10.856 11.066 4.878 0 9.809-2.846 9.809-7.716 0-2.545-1.46-4.231-3.569-5.187m-6.33 4.855c-1.077 0-2.026-.512-2.026-1.453 0-1.483 1.822-1.934 3.606-1.934.678 0 1.34.045 1.927.173-.422 1.927-1.671 3.215-3.508 3.214Z"/></svg><span>Threads</span></a></li>
-      <li><a href="https://www.facebook.com/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg><span>Facebook</span></a></li>
-      <li><a href="https://t.me/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span>Telegram</span></a></li>
-      <li><a href="https://reddit.com/user/notanda" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z"/></svg><span>Reddit</span></a></li>
-      <li><a href="https://mastodon.social/@notanda" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg><span>Mastodon</span></a></li>
-      <li><a href="https://medium.com/@notanda" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.21 0A4.201 4.201 0 0 0 0 4.21v15.58A4.201 4.201 0 0 0 4.21 24h15.58A4.201 4.201 0 0 0 24 19.79v-1.093c-.137.013-.278.02-.422.02-2.577 0-4.027-2.146-4.09-4.832a7.592 7.592 0 0 1 .022-.708c.093-1.186.475-2.241 1.105-3.022a3.885 3.885 0 0 1 1.395-1.1c.468-.237 1.127-.367 1.664-.367h.023c.101 0 .202.004.303.01V4.211A4.201 4.201 0 0 0 19.79 0Zm.198 5.583h4.165l3.588 8.435 3.59-8.435h3.864v.146l-.019.004c-.705.16-1.063.397-1.063 1.254h-.003l.003 10.274c.06.676.424.885 1.063 1.03l.02.004v.145h-4.923v-.145l.019-.005c.639-.144.994-.353 1.054-1.03V7.267l-4.745 11.15h-.261L6.15 7.569v9.445c0 .857.358 1.094 1.063 1.253l.02.004v.147H4.405v-.147l.019-.004c.705-.16 1.065-.397 1.065-1.253V6.987c0-.857-.358-1.094-1.064-1.254l-.018-.004zm19.25 3.668c-1.086.023-1.733 1.323-1.813 3.124H24V9.298a1.378 1.378 0 0 0-.342-.047Zm-1.862 3.632c-.1 1.756.86 3.239 2.204 3.634v-3.634z"/></svg><span>Medium</span></a></li>
-    </ul>
-    <p>This site sets no cookies and uses no tracking. &middot; Last&nbsp;updated&nbsp;2026-09-14</p>
-  </div>
+<div class="wrap">
+<div class="foot-brand">
+<img class="emblem" src="assets/notanda_emblem_farbig_dunkel.svg" alt="Notanda Research" width="700" height="944">
+<p class="descriptor">Independent evidence infrastructure for scientific research</p>
+</div>
+<ul>
+<li><a href="imprint.html">Imprint</a></li>
+<li><a href="privacy.html">Privacy</a></li>
+<li><a href="mailto:beta@notanda.io">Contact</a></li>
+<li><a href="https://github.com/RudiRegenwurm/Open-Access-API-Harvester">Repository</a> <span class="tag">MIT</span></li>
+</ul>
+<!-- Icon-Pfade: simple-icons (CC0-1.0); Marken gehoeren den jeweiligen Anbietern. -->
+<ul class="social">
+<li><a href="https://x.com/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg><span>X</span></a></li>
+<li><a href="https://instagram.com/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span>Instagram</span></a></li>
+<li><a href="https://threads.com/@notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.263 11.097c-.03-3.486-1.92-5.586-5.111-5.586-2.13 0-3.922.963-4.863 2.499l2.062 1.438c.535-.843 1.272-1.543 2.628-1.543 1.528 0 2.318.85 2.544 2.431a15 15 0 0 0-2.236-.173c-4.125 0-6.068 1.867-6.068 4.336s1.943 3.99 4.804 3.99c3.139 0 5.013-2.115 5.781-4.735.798.361 1.348 1.204 1.348 2.47 0 3.387-3.907 5.232-7.22 5.232-4.885 0-8.077-3.207-8.077-8.424 0-6.392 4.223-10.487 9.9-10.487 3.808 0 5.69 1.671 6.97 3.914l2.108-1.475C21.44 2.078 18.331 0 13.663 0 6.227 0 1.168 5.277 1.168 12.934c0 7 4.953 11.066 10.856 11.066 4.878 0 9.809-2.846 9.809-7.716 0-2.545-1.46-4.231-3.569-5.187m-6.33 4.855c-1.077 0-2.026-.512-2.026-1.453 0-1.483 1.822-1.934 3.606-1.934.678 0 1.34.045 1.927.173-.422 1.927-1.671 3.215-3.508 3.214Z"/></svg><span>Threads</span></a></li>
+<li><a href="https://www.facebook.com/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg><span>Facebook</span></a></li>
+<li><a href="https://t.me/notandaresearch" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span>Telegram</span></a></li>
+<li><a href="https://reddit.com/user/notanda" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z"/></svg><span>Reddit</span></a></li>
+<li><a href="https://mastodon.social/@notanda" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg><span>Mastodon</span></a></li>
+<li><a href="https://medium.com/@notanda" rel="me"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.21 0A4.201 4.201 0 0 0 0 4.21v15.58A4.201 4.201 0 0 0 4.21 24h15.58A4.201 4.201 0 0 0 24 19.79v-1.093c-.137.013-.278.02-.422.02-2.577 0-4.027-2.146-4.09-4.832a7.592 7.592 0 0 1 .022-.708c.093-1.186.475-2.241 1.105-3.022a3.885 3.885 0 0 1 1.395-1.1c.468-.237 1.127-.367 1.664-.367h.023c.101 0 .202.004.303.01V4.211A4.201 4.201 0 0 0 19.79 0Zm.198 5.583h4.165l3.588 8.435 3.59-8.435h3.864v.146l-.019.004c-.705.16-1.063.397-1.063 1.254h-.003l.003 10.274c.06.676.424.885 1.063 1.03l.02.004v.145h-4.923v-.145l.019-.005c.639-.144.994-.353 1.054-1.03V7.267l-4.745 11.15h-.261L6.15 7.569v9.445c0 .857.358 1.094 1.063 1.253l.02.004v.147H4.405v-.147l.019-.004c.705-.16 1.065-.397 1.065-1.253V6.987c0-.857-.358-1.094-1.064-1.254l-.018-.004zm19.25 3.668c-1.086.023-1.733 1.323-1.813 3.124H24V9.298a1.378 1.378 0 0 0-.342-.047Zm-1.862 3.632c-.1 1.756.86 3.239 2.204 3.634v-3.634z"/></svg><span>Medium</span></a></li>
+</ul>
+<p>This site sets no cookies and uses no tracking. &middot; Last&nbsp;updated&nbsp;2026-09-20</p>
+</div>
 </footer>
 </body>
 </html>
